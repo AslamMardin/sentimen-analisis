@@ -61,6 +61,20 @@ class SentimenController extends Controller
   return view('sentimens.index', $data);
 }
 
+public function profile()
+{
+  $profile = $this->myGet("account/verify_credentials");
+  $tweets = $this->myGet("statuses/user_timeline", [
+  'screen_name' => $profile->screen_name
+]);
+  return view('sentimens.profile', [
+    'profile' => $profile,
+    'tweets' => $tweets,
+  ]); 
+}
+
+
+// function////
 public function dbUnasman(){
   echo json_encode($this->dbKategori("unasman"));
 }

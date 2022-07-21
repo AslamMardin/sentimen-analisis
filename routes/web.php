@@ -18,7 +18,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/sentimen', [SentimenController::class, 'index']);
+Route::get('/sentimen', [SentimenController::class, 'index'])->name('home');
+Route::get('/profile', [SentimenController::class, 'profile'])->name('profile');
 Route::get('/unasman', [SentimenController::class, 'dbUnasman']);
 Route::get('/polewali', [SentimenController::class, 'dbPolewali']);
 Route::get('/sulbar', [SentimenController::class, 'dbSulbar']);

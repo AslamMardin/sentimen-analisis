@@ -7,11 +7,11 @@
 
 
       <nav class="d-inline-flex mt-md-0 ms-md-auto">
-        <a class="me-3 py-2 text-decoration-none text-dark" href="index.php"><i class="bi bi-house-fill"></i> Home</a>
-        <a class="me-3 py-2 text-decoration-none text-dark" href="profile.php"><i class="bi bi-person-lines-fill"></i> Profile</a>
+        <a class="me-3 py-2 text-decoration-none text-dark" href="{{route('home')}}"><i class="bi bi-house-fill"></i> Home</a>
+        <a class="me-3 py-2 text-decoration-none text-dark" href="{{route('profile')}}"><i class="bi bi-person-lines-fill"></i> Profile</a>
       </nav>
     </div>
   </div>
 
 
-@include('pages.navbar2')
+

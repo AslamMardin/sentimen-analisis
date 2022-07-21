@@ -10,10 +10,10 @@
     
     <div class="col">
       <div class="card-body" style="font-size: 11px;">
-        <h6 class="card-title" style="font-size:11px">@<?= $at->user->screen_name ?></h6>
+        <h6 class="card-title" style="font-size:11px">{{ "@".$at->user->screen_name}} </h6>
         <p class="card-text border-start border-5 border-danger p-2 fw-semibold" style="font-size:14px; overflow-wrap: break-word; background:#eee">
-        	<i class="bi bi-quote" style="opacity: .7; font-size: 14px;;"></i><?= $at->text ?>.<i class="bi bi-quote" style="opacity: .7; font-size: 14px;;"></i></p>
-        <p class="card-text"><small class="text-muted"><?= $at->created_at ?></small></p>
+        	<i class="bi bi-quote" style="opacity: .7; font-size: 14px;;"></i>{{$at->text}}.<i class="bi bi-quote" style="opacity: .7; font-size: 14px;;"></i></p>
+        <p class="card-text"><small class="text-muted">{{$at->created_at}}</small></p>
       </div>
     </div>
   </div>

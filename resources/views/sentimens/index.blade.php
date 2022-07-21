@@ -3,6 +3,7 @@
 <header>
         <!-- navbar -->
         @include('pages.navbar')
+        @include('pages.navbar2')
         <!--/  navbar -->
       </header>
 
