@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SentimenController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/sentimen', [SentimenController::class, 'index']);
+Route::get('/unasman', [SentimenController::class, 'dbUnasman']);
+Route::get('/polewali', [SentimenController::class, 'dbPolewali']);
+Route::get('/sulbar', [SentimenController::class, 'dbSulbar']);
